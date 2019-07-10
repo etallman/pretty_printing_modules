@@ -29,20 +29,23 @@ pp.pprint(breakfast_tup)
 
 
 ###### Example 3. Using PPrint in an API Call ######
-from pprint import pprint
-API_key = "8f9e2794872829c6d6f7aa6375e751c8"
+# Get an API key and uncomment the code to make this call run.
+# Get a free API Key Here: https://openweathermap.org/city
 
-base_url = "http://api.openweathermap.org/data/2.5/weather?"
+# from pprint import pprint
+# API_key = "" #Enter your API key in the empty string
 
-print("\n" + "-------Pprint with Weather API-----------")
-zip_code = str(input("\n" + "Enter a Zip code to check the current weather: "))
-Final_url = base_url + "appid=" + API_key + "&zip=" + zip_code
+# base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
-weather_data = requests.get(Final_url).json()
+# print("\n" + "-------Pprint with Weather API-----------")
+# zip_code = str(input("\n" + "Enter a Zip code to check the current weather: "))
+# Final_url = base_url + "appid=" + API_key + "&zip=" + zip_code
 
-print("\n Current Weather in: " + zip_code +":\n")
-print("------------------------------------------")
-pprint(weather_data) 
+# weather_data = requests.get(Final_url).json()
+
+# print("\n Current Weather in: " + zip_code +":\n")
+# print("------------------------------------------")
+# pprint(weather_data) 
 
 
 #### Example 4. Pprint with Derivative Function .pformat ######
